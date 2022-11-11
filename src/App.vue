@@ -2,6 +2,7 @@
  import Editor from './components/Editor.vue'
  import Viewer from './components/Viewer.vue'
 
+
  export default {
      data() {
          return {
@@ -26,23 +27,7 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
  @import './assets/base.css';
-
- #app {
-     max-width: 1280px;
-     margin: 0 auto;
-     padding: 2rem;
-     font-weight: normal;
-     height: 100%;
-     width: 100%;
-     position: absolute;
- }
-
- .body {
-     display: flex;
-     gap: 3%;
-     width: 100%;
-     height: 100%;
- }
+ @import './assets/rsm.scss';
 </style>

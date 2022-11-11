@@ -7,7 +7,7 @@
 <template>
   <div class="viewer">
     <div class="manuscript">
-      <iframe id="frame" src="http://localhost:8001/view">
+      <iframe id="frame" src="http://localhost:8000/view">
       </iframe>
     </div>
   </div>

@@ -2,14 +2,14 @@
  export default {
      data() {
          return {
-             value: "type RSM here"
+             value: ":manuscript:\n\nHello RSM.\n\n::\n"
          }
      },
      methods: {
          make(event) {
              console.log('emitting make event');
 
-             fetch('http://localhost:8001/make', {
+             fetch('http://localhost:8000/make', {
 	         method: 'PUT',
 	         headers:{'Content-Type':'application/json'},
 	         body: JSON.stringify({
@@ -18,6 +18,7 @@
              }).then(response => {
                  return response.json()
              }).then(data => {
+                 console.log(data)
                  this.$emit('make', data.output);
              });
          }
