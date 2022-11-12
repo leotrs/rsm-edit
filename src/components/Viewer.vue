@@ -1,17 +1,11 @@
 <script>
+ import "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+ import { loadTooltips } from 'http://localhost:8000/static/tooltips.js'
+
  export default {
      props: ['body'],
-     mounted() {
-         const files = ['jquery-3.6.0.js', 'classes.js', 'tooltips.js', 'tooltipster.bundle.js'];
-         for (const i in files) {
-             const plugin = document.createElement("script");
-             plugin.setAttribute(
-                 "src",
-                 `http://localhost:8000/static/${files[i]}`
-             );
-             plugin.async = true;
-             document.head.appendChild(plugin);
-         }
+     updated() {
+         loadTooltips();
      }
  }
 </script>
@@ -28,7 +22,7 @@
 
 <style lang ="scss">
  @import 'http://localhost:8000/static/rsm.css';
- @import 'http://localhost:8000/static/tooltipster.bundle.css';
+ @import 'tooltipster/dist/css/tooltipster.bundle.css';
 
  .viewer {
      height: 100%;

@@ -7,8 +7,12 @@
     "preview": "vite preview --port 5050"
   },
   "dependencies": {
+    "@volar/server": "^0.32.1",
+    "@volar/vue-language-server": "^1.0.9",
     "jquery": "^3.6.1",
+    "mathjax": "^3.2.2",
     "sass": "^1.56.1",
+    "tooltipster": "^4.2.8",
     "vue": "^3.2.31"
   },
   "devDependencies": {

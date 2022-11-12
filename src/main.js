@@ -1,7 +1,10 @@
+import jquery from 'jquery'
+// window.jquery = jquery
+window.$ = jquery
+import 'tooltipster'
+
 import { createApp } from 'vue'
 import App from './App.vue'
-import jquery from 'jquery'
-window.jquery = jquery
-window.$ = jquery
+
 
 createApp(App).mount('#app')
