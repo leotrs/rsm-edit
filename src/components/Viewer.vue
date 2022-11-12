@@ -1,10 +1,13 @@
 <script>
  import "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
  import { loadTooltips } from 'http://localhost:8000/static/tooltips.js'
+ import { loadClassInteractions } from 'http://localhost:8000/static/classes.js'
 
  export default {
      props: ['body'],
+
      updated() {
+         loadClassInteractions();
          loadTooltips();
      }
  }
