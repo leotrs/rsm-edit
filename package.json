@@ -11,13 +11,13 @@
     "@volar/vue-language-server": "^1.0.9",
     "jquery": "^3.6.1",
     "mathjax": "^3.2.2",
-    "sass": "^1.56.1",
     "tooltipster": "^4.2.8",
     "vue": "^3.2.31"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.2.2",
     "node-sass": "^8.0.0",
+    "sass": "^1.56.1",
     "sass-loader": "^13.2.0",
     "vite": "^2.9.15"
   }
