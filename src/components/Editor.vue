@@ -2,7 +2,7 @@
  export default {
      data() {
          return {
-             value: ":manuscript:\n  :title: Some title\n\n# Tooltips\n\nOne of the main features of RSM is that anything can be labeled and referenced.  For\nexample,\n\n:theorem:\n   :label: some-thm\n\n   :paragraph: :label: some-stm :: All $X$ are $Y$.\n\n   And this is another paragraph.\n\n::\n\nThe first paragraph of the theorem has been labeled and can now be referred to\n:ref:some-stm,like this::.  The entire theorem itself can be referred to\n:ref:some-thm,like this:: (**NOTE\\: ** sometimes the math in the tooltip is displayed\nincorrectly.  If the tooltip does not show, refresh the page a few times first.)\n\nNote the Theorem block also has a handrail and will eventually support a more\nfully-featured context menu.\n\n::\n\n::\n"
+             value: ":manuscript:\n  :title: Some title\n\n# Tooltips\n\nOne of the main features of RSM is that anything can be labeled and referenced.  For\nexample,\n\n:theorem:\n   :label: some-thm\n\n   :paragraph: {:label: some-stm} All $X$ are $Y$.\n\n   And this is another paragraph.\n\n::\n\nThe first paragraph of the theorem has been labeled and can now be referred to\n:ref:some-stm,like this::.  The entire theorem itself can be referred to\n:ref:some-thm,like this:: (**NOTE\\: ** sometimes the math in the tooltip is displayed\nincorrectly.  If the tooltip does not show, refresh the page a few times first.)\n\nNote the Theorem block also has a handrail and will eventually support a more\nfully-featured context menu.\n\n::\n\n::\n"
          }
      },
      methods: {
@@ -18,7 +18,6 @@
              }).then(response => {
                  return response.json()
              }).then(data => {
-                 console.log(data)
                  this.$emit('make', data.output);
              });
          }

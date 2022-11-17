@@ -6,7 +6,6 @@
      props: ['body'],
 
      updated() {
-         console.log(this.body);
          setupClassInteractions();
          loadMathJax();
          createTooltips();
@@ -23,7 +22,7 @@
 </template>
 
 
-<style lang ="scss">
+<style>
  @import 'http://localhost:8000/static/rsm.css';
  @import 'tooltipster/dist/css/tooltipster.bundle.css';
 
