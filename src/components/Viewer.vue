@@ -1,14 +1,11 @@
 <script>
- import { loadMathJax, createTooltips } from 'http://localhost:8000/static/tooltips.js'
- import { setupClassInteractions } from 'http://localhost:8000/static/classes.js'
+ import { onload } from 'http://localhost:8000/static/onload.js'
 
  export default {
      props: ['body'],
 
      updated() {
-         setupClassInteractions();
-         loadMathJax();
-         createTooltips();
+         onload();
      }
  }
 </script>
