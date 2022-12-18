@@ -69,7 +69,6 @@
  #app {
      max-width: 1280px;
      margin: 0 auto;
-     padding-inline: 2rem;
      font-weight: normal;
      height: 100%;
      width: 100%;
@@ -78,7 +77,7 @@
 
  .body {
      display: flex;
-     gap: 3%;
+     gap: 1.5%;
      width: 100%;
      height: 77%;
      margin-block: 2rem;

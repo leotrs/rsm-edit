@@ -43,6 +43,8 @@
      margin-top: 0;
      padding-inline: 3rem;
      box-shadow: unset;
+     background: white;
+     border-radius: 0;
  }
 
 
