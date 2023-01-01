@@ -9,7 +9,7 @@
          make(event) {
              console.log('emitting make event');
 
-             fetch('http://localhost:8000/make', {
+             fetch('https://rsm-api.fly.dev/make', {
 	         method: 'PUT',
 	         headers:{'Content-Type':'application/json'},
 	         body: JSON.stringify({

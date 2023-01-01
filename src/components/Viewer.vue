@@ -1,5 +1,5 @@
 <script>
- import { onload } from 'http://localhost:8000/static/onload.js'
+ import { onload } from 'https://rsm-api.fly.dev/static/onload.js'
 
  export default {
      props: ['body'],
@@ -22,7 +22,7 @@
 
 
 <style>
- @import 'http://localhost:8000/static/rsm.css';
+ @import 'https://rsm-api.fly.dev/static/rsm.css';
  @import 'tooltipster/dist/css/tooltipster.bundle.css';
 
  .viewer {
