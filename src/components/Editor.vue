@@ -1,8 +1,11 @@
 <script>
  export default {
      data() {
+         let params = new URLSearchParams(document.location.search);
+         let src = params.get("src");
+         if (src === null || src === "") src = ":manuscript:\n  :title: Some title\n\n# Tooltips\n\nOne of the main features of RSM is that anything can be labeled and referenced.  For example,\n\n:theorem:\n   :label: some-thm\n\n   :paragraph: {:label: some-stm} All $X$ are $Y$.\n\n   And this is another paragraph.\n\n::\n\nThe first paragraph of the theorem has been labeled and can now be referred to :ref:some-stm,like this::.  The entire theorem itself can be referred to :ref:some-thm,like this::. \n\nNote the Theorem block also has a handrail and will eventually support a more\nfully-featured context menu.\n\n::\n\n::\n";
          return {
-             value: ":manuscript:\n  :title: Some title\n\n# Tooltips\n\nOne of the main features of RSM is that anything can be labeled and referenced.  For example,\n\n:theorem:\n   :label: some-thm\n\n   :paragraph: {:label: some-stm} All $X$ are $Y$.\n\n   And this is another paragraph.\n\n::\n\nThe first paragraph of the theorem has been labeled and can now be referred to :ref:some-stm,like this::.  The entire theorem itself can be referred to :ref:some-thm,like this::. \n\nNote the Theorem block also has a handrail and will eventually support a more\nfully-featured context menu.\n\n::\n\n::\n"
+             value: src
          }
      },
      methods: {
