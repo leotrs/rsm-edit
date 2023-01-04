@@ -11,8 +11,6 @@
      },
      methods: {
          make(event) {
-             console.log('emitting make event');
-
              fetch('https://rsm-api.fly.dev/make', {
 	         method: 'PUT',
 	         headers:{'Content-Type':'application/json'},

@@ -35,17 +35,4 @@
      width: 100%;
  }
 
- .mount-manuscript-here section.level-1 {
-     margin-top: 1rem;
- }
-
- .mount-manuscript-here .manuscriptwrapper {
-     margin-top: 0;
-     padding-inline: 3rem;
-     box-shadow: unset;
-     background: white;
-     border-radius: 0;
- }
-
-
 </style>

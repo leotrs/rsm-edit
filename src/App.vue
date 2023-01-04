@@ -11,6 +11,7 @@
      },
      methods: {
          display(value) {
+             value = value.replace(/class="manuscriptwrapper"/, 'class="manuscriptwrapper embedded"');
              this.body = value;
          }
      },
