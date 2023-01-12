@@ -66,20 +66,23 @@
 <style lang="scss">
  @import 'https://www.write-rsm.org/static/index.css';
 
+ body {
+     height: 100vh;
+ }
+
  #app {
      max-width: 1280px;
      margin: 0 auto;
      font-weight: normal;
      height: 100%;
      width: 100%;
-     position: absolute;
  }
 
  .body {
      display: flex;
      gap: 1.5%;
      width: 100%;
-     height: 77%;
+     height: calc(100% - 163px - 4rem);
      margin-block: 2rem;
  }
 
