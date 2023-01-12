@@ -29,12 +29,11 @@
     <label id="the-label" for="the-menu"></label>
     <nav class="nav-row nav-main">
       <span class="links">
-        <span class="link-wrapper no-border"><a class="logo" href="/"><strong>:rsm:</strong></a></span>
-        <span class="link-wrapper"><a href="tour/markup.html">Tour</a></span>
+        <span class="link-wrapper no-border"><a class="logo" href="https://www.write-rsm.org/"><strong>:rsm:</strong></a></span>
+        <span class="link-wrapper"><a href="https://docs.write-rsm.org/en/latest/tutorials/markup.html">Tour</a></span>
         <span class="link-wrapper"><a href="https://docs.write-rsm.org/en/latest/tutorials.html">Getting Started</a></span>
         <span class="link-wrapper"><a href="https://docs.write-rsm.org/en/latest/contributing.html">Contribute</a></span>
         <span class="link-wrapper"><a href="https://docs.write-rsm.org/">Docs</a></span>
-        <span class="link-wrapper"><a href="/"><strong>Try it out</strong></a></span>
       </span>
       <span class="socials">
         <a class="twitter" href="https://twitter.com/write_rsm"></a>
@@ -51,7 +50,7 @@
 
   <footer class="footer">
     <div class="footer-wrapper">
-      <a class="logo logo-light" href="/"><strong>:rsm:</strong></a>
+      <a class="logo logo-light" href="https://www.write-rsm.org/"><strong>:rsm:</strong></a>
       <p style="margin:0">Made with <span class="heart">❤</span> by leotrs</p>
       <span class="socials">
         <a class="twitter-light" href="https://twitter.com/write_rsm"></a>
